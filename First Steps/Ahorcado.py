@@ -43,7 +43,7 @@ def hangman():
     if lives == 0:
         print(f'Sorry you have run out of lives. The Word was {word}')
     else:
-        print(f'Yay! you have guessed the word "{word}" correctly with {lives} left. :)')
+        print(f'iiiooooo! you have guessed the word "{word}" correctly with {lives} left. :)')
 
         
 hangman()
