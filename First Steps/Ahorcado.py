@@ -1,5 +1,6 @@
 #Import packages
-import random 
+import random
+from re import A 
 from words import words
 import string
 
@@ -17,12 +18,12 @@ def hangman():
     used_letters = set()      #set of letters selected by the user
 
     #lives
-    lives = 6
+    lives = 8
     #get the user input
     while len(word_letters) > 0 and lives != 0:
         #letter used
         # ' '.join(['a', 'b', 'cd']) ---> ' a b cd'
-        print(f'You have {lives} left, lives You have used: ' , ' '.join(used_letters))
+        print(f'You have {lives} lives left, You have used: ' , ' '.join(used_letters))
 
         #word with dashes, showing only the letters guessed correctly
         word_list= (letter if letter in used_letters else "-" for letter in word)
@@ -43,7 +44,6 @@ def hangman():
     if lives == 0:
         print(f'Sorry you have run out of lives. The Word was {word}')
     else:
-        print(f'iiiooooo! you have guessed the word "{word}" correctly with {lives} left. :)')
-
+        print(f'iiiooooo! you have guessed the word "{word}" correctly with {lives} lives left. :)')
         
 hangman()
