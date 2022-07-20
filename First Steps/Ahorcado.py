@@ -1,6 +1,6 @@
 #Import packages
 import random 
-from Words import words
+from words import words
 import string
 
 #Create functions to get the words without spaces and dashes
