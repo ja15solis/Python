@@ -47,4 +47,3 @@ def hangman():
 
         
 hangman()
-        
